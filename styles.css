@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background-overlay {
+    background: url("./img/background-principal.jpg") no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #e50914;  /* Color rojo de Netflix */
+}
+
+.hidden {
+    display: none;
+}
+
+.sign-in-btn, button[type="submit"] {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover, button[type="submit"]:hover {
+    background-color: #b20710; /* Un tono más oscuro para el hover */
+}
+
+.main-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);  /* Efecto de elevación */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .main-content {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .sign-in-btn, button[type="submit"] {
+        padding: 10px 20px;
+    }
+
+    .movie-cards .card {
+        width: 120px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#logo {
+    width: 150px;
+    fill: red;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+.input input, .register-button {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
