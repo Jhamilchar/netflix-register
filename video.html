@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"/>
+    <title>Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh; /* Pantalla completa */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        video {
+            width: 100vw;
+            height: 100vh;
+            border-radius: 8px;
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 10%;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            font-size: 2em;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 5%;
+            left: 10%;
+            max-width: 400px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .related-videos {
+            margin-top: 20px;
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .related-videos img {
+            width: 150px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .related-videos img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor Principal del Video -->
+    <div class="video-container">
+        <video controls autoplay>
+            <source src="static/suits.mp4" type="video/mp4"> <!-- Cambia por tu URL de video -->
+            Tu navegador no soporta el tag de video.
+        </video>
+    </div>
+
+</body>
+</html>

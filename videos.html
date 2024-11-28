@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"/>
+    <title>Página de inicio - Netflix</title>
+    <link rel="stylesheet" href="static/normalize.css">
+    <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
     <aside class="background--banner">
@@ -18,22 +19,25 @@
             <div class="menu">
                 <nav>
                     <ul class="navegacion navegacion--izquierda">
-                        <li class="logo"><a href="#"><img src="Multimedia/netflix.png" alt="Netflix"></a></li>
-                        <li><a href="#">Explorar ⏷</a></li>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Series</a></li>
-                        <li><a href="#">Peliculas</a></li>
-                        <li><a href="#">Novedades Populares</a></li>
-                        <li><a href="#">Mi Lista</a></li>
+                        <li class="logo"><a href="/"><img src="Multimedia/netflix.png" alt="Netflix"></a></li>
+                        <div class="nav-top">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Series</a></li>
+                            <li><a href="#">Peliculas</a></li>
+                            <li><a href="#">Novedades Populares</a></li>
+                            <li><a href="#">Mi Lista</a></li>
+                            <li><a href="#">Explora por idiomas</a></li>
+                        </div>
                     </ul>
                 </nav>
                 <nav>
                     <ul class="navegacion navegacion--derecha">
                         <li><a href="#"><img src="Multimedia/lupa.svg" alt="Lupa"></a></li>
-                        <li><a href="#">Niños</a></li>
-                        <li><a href="#">DVD</a></li>
-                        <li><a href="#"><img src="Multimedia/campana.png" alt="Campana"></a></li>
-                        <li class="usuario"><a href="#"><img src="Multimedia/user.png" alt="Usuario"></a></li>
+                        <svg class="color-svg" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="BellStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.0002 4.07092C16.3924 4.55624 19 7.4736 19 11V15.2538C20.0489 15.3307 21.0851 15.4245 22.1072 15.5347L21.8928 17.5232C18.7222 17.1813 15.4092 17 12 17C8.59081 17 5.27788 17.1813 2.10723 17.5232L1.89282 15.5347C2.91498 15.4245 3.95119 15.3307 5.00003 15.2538V11C5.00003 7.47345 7.60784 4.55599 11.0002 4.07086V2H13.0002V4.07092ZM17 15.1287V11C17 8.23858 14.7614 6 12 6C9.2386 6 7.00003 8.23858 7.00003 11V15.1287C8.64066 15.0437 10.3091 15 12 15C13.691 15 15.3594 15.0437 17 15.1287ZM8.62593 19.3712C8.66235 20.5173 10.1512 22 11.9996 22C13.848 22 15.3368 20.5173 15.3732 19.3712C15.3803 19.1489 15.1758 19 14.9533 19H9.0458C8.82333 19 8.61886 19.1489 8.62593 19.3712Z" fill="currentColor"></path></svg>
+                        <div class="profile">
+                            <li><a href="#"><img class="usuario" src="img/profile1.png" alt="Usuario"></a></li>
+                            <span class="caret"></span>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -42,30 +46,223 @@
                     <img src="Multimedia/imagotipo-jurassic.webp" alt="Imagotipo">
                 </div>
                 <div class="imagotipo--info">
-                    <p>⏵Play</p>
-                    <p>ⓘ More Info</p>
+                    <p class="duo-align"><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="PlayStandard" aria-hidden="true"><path d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z" fill="currentColor"></path></svg> Reproducir</p>
+                    <p class="duo-align"><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="CircleIStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z" fill="currentColor"></path></svg> Más información</p>
                 </div>
             </div>
         </div>
     </aside>
     <main class="catalogos">
         <section class="catalogo--peliculas">
-            <h1>Películas Populares</h1>
             <div class="peliculas" id="populares">
+                <div class="carousel-container">
+                    <button class="carousel-button left" onclick="moveCarousel('left')">&lt;</button>
+                    <p class="my-list">Mi Lista</p>
+                    <div class="carousel-wrapper" id="carousel">
+                      <!-- Tarjetas con imágenes -->
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTK6GR7kfkmBnVe5hFj_tPbY0StNHetUXJx-auDvrJoOFt2L8s6nV2RZm5ZLaY37zojTrLryl4CgPBXyYr0ftJi_anCslMzSXwY.webp?r=fff" alt="Video 1">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABafEkwgV-ddaqb-IzfVJPCI7Kc4kSddq7NjUsnrOePu5t6IicZvd_lkxEjYiQkQ2sIpsVBC7Gk653tPkWAy9X9ef9dg3q7LDLpg.webp?r=c30" alt="Video 2">
+                        </a>
+                      </div>
+                      <!-- Agrega más tarjetas aquí -->
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABedTPhsJmZBPIoxluWLI-vCmpa-tI2Q3rDx_oWe8qnG3PxFPUXej0CqcslsQlM7PhCpa21xvf6M_Kn2mk8HQkMNswryjDXEtHUSZweyqqKr9zHGmMqewUWc7DnWpXnzEGePy.jpg?r=8e7" alt="Video 3">
+                        </a>
+                      </div>
+                      <!-- Duplica los ítems para el loop infinito -->
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb4kr-U8Rlm4nGvk5CG-eKnGsVbPSvbyMTS_nuyTVAi1ZglQ405afRY9Rk8qCV-56vHkHm1w-PXGWy6VPi76QQcaprCanGRn8uh6cTEW2ObEif2cYvYcnV3LueusbE4LlFWk.jpg?r=6d5" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb0CUCcLUduYOKxhWCc2dMTFTRrxuFO4a4eOLqnS9g1A8VGdmthAaxwVHdZCRDLb1qJD1Fud_fV82AM9XLo_vSywovr0Mu4XF9t23qBn1WhWrYrh-pcUIkIJ-R0XOPuXhgRy.jpg?r=568" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUmDpk_vVEwbyEJSiM4D7afCg1cx_HRp7fMegVPoaP3K2TSwyDZozw3jFaooTOfOoz8qK_4R8HaE6t2r2MnenMaJsaxm8HF39eU.webp?r=935" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTJBB4Z-CuPEwaDXCxx9aeq3gWg4XGnoLiMq4B4UdBu8fNXmqZnX0s0PlONTAY80JRaBJGdz4t5vX5dmPtl8alLdevbJSW44n3A.webp?r=6c4" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcj3jyGlblEn3uFR443gJ62RnkAO9xcODWIBsMciUGzGMq8Idss8uxphpiVUTKlDh5Sr7gf6ZMtrLwxU_e0Tf8NNstIIPwvgC5vDJq6oR5ZFb3rXOlwBS4-O52_82cFW0rXV.jpg?r=b27" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeRuNO69SWhpcl5J_j3pIZ8wJiu16Wy6yVI50iA-6DpTwMjLaf4nn6-QyuT7Ss7A7H_xYOF9EWF0sb2ubiHYNWWtuAEmjjDvjro.webp?r=b32" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcGBIuzusTO6Xuewb5HfD42L-3bZTKqjipoayNRCh6c8mA9XemFTwCO-PjUh8X-lp3nmxP9fPWkRDSq0G87RrxhkZFkQbKCWqTIPhotCRtu4eLhTAYUg00ptXmnVTmmxlm4Z.jpg?r=683" alt="">
+                        </a>
+                      </div>
+                      <!-- Repite las imágenes para el loop infinito -->
+                    </div>
+                    <button class="carousel-button right" onclick="moveCarousel('right')">&gt;</button>
+                  </div>
+                  
+        </section>
+        <section class="catalogo--peliculas">
+            <div class="carousel-container">
+                <p class="my-list_2">Series de anime japoneses</p>
+                <div class="carousel-wrapper" id="carousel">
+                  <!-- Tarjetas con imágenes -->
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUcoDRG_47YBM3WAne23M21ButgX5fdc0YB_8mCcRj0VsOXZDe2zMiH_AAo6j-V0aLZQT79e4xzBD8nCrHcKF_qOVHiw8W-L3Pc.webp?r=7e6" alt="Video 1">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfROlf8K-mofLHV7WlBKzKECXxsff0s55jwxk6uSwuDEyg_r_m12w9NXeg_hwmXoQL6tuUlht-8WOW7kgGXLQy9Ap_M4PGsucM8.webp?r=181" alt="Video 2">
+                    </a>
+                  </div>
+                  <!-- Agrega más tarjetas aquí -->
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXJC2FJ7fF7JYLd3iVi-_AsyglpeyZtt6sc4Cxj5BqIfxXO8xDFoudqNT_Ziv-ZZugJqu8stvf4sFTlwRqi7zam-Xbam7f5o6Dg.webp?r=56d" alt="Video 3">
+                    </a>
+                  </div>
+                  <!-- Duplica los ítems para el loop infinito -->
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaI_0mWBJCcIzKgjmhQ41yABxKnD408RngK1MVhSrTwpFOyNBQMcUbOB_Pv15yCl9nHnRtIaZkucr3G2CzV4s1S_F0_hJROj9i0.webp?r=fb4" alt="">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfjJcbVJWgNkalXliWSv1VUq73eTi5p8LjvB5bze5_-uwYtC-XJLPZxpRRO15jrRcrUVJgBj5xViaZv37A4AFTnkNBICX26IJAo.webp?r=6f5" alt="">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdYUMSX2_HsotO-N38GTwNww1MgTJG0A4mtCOVVxBhMNC3Md_lLS6OpQRkcgR503_VWe8caXdpWkT4cgMKJ_qRBk4W8AX1iaBlY.webp?r=c47" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
 
-            </div>
+        <section class="catalogo--peliculas">
+            <div class="peliculas" id="populares">
+                <div class="carousel-container">
+                    <button class="carousel-button left" onclick="moveCarousel('left')">&lt;</button>
+                    <p class="my-list">Mi Lista</p>
+                    <div class="carousel-wrapper" id="carousel">
+                      <!-- Tarjetas con imágenes -->
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTK6GR7kfkmBnVe5hFj_tPbY0StNHetUXJx-auDvrJoOFt2L8s6nV2RZm5ZLaY37zojTrLryl4CgPBXyYr0ftJi_anCslMzSXwY.webp?r=fff" alt="Video 1">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABafEkwgV-ddaqb-IzfVJPCI7Kc4kSddq7NjUsnrOePu5t6IicZvd_lkxEjYiQkQ2sIpsVBC7Gk653tPkWAy9X9ef9dg3q7LDLpg.webp?r=c30" alt="Video 2">
+                        </a>
+                      </div>
+                      <!-- Agrega más tarjetas aquí -->
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABedTPhsJmZBPIoxluWLI-vCmpa-tI2Q3rDx_oWe8qnG3PxFPUXej0CqcslsQlM7PhCpa21xvf6M_Kn2mk8HQkMNswryjDXEtHUSZweyqqKr9zHGmMqewUWc7DnWpXnzEGePy.jpg?r=8e7" alt="Video 3">
+                        </a>
+                      </div>
+                      <!-- Duplica los ítems para el loop infinito -->
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb4kr-U8Rlm4nGvk5CG-eKnGsVbPSvbyMTS_nuyTVAi1ZglQ405afRY9Rk8qCV-56vHkHm1w-PXGWy6VPi76QQcaprCanGRn8uh6cTEW2ObEif2cYvYcnV3LueusbE4LlFWk.jpg?r=6d5" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb0CUCcLUduYOKxhWCc2dMTFTRrxuFO4a4eOLqnS9g1A8VGdmthAaxwVHdZCRDLb1qJD1Fud_fV82AM9XLo_vSywovr0Mu4XF9t23qBn1WhWrYrh-pcUIkIJ-R0XOPuXhgRy.jpg?r=568" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUmDpk_vVEwbyEJSiM4D7afCg1cx_HRp7fMegVPoaP3K2TSwyDZozw3jFaooTOfOoz8qK_4R8HaE6t2r2MnenMaJsaxm8HF39eU.webp?r=935" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTJBB4Z-CuPEwaDXCxx9aeq3gWg4XGnoLiMq4B4UdBu8fNXmqZnX0s0PlONTAY80JRaBJGdz4t5vX5dmPtl8alLdevbJSW44n3A.webp?r=6c4" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcj3jyGlblEn3uFR443gJ62RnkAO9xcODWIBsMciUGzGMq8Idss8uxphpiVUTKlDh5Sr7gf6ZMtrLwxU_e0Tf8NNstIIPwvgC5vDJq6oR5ZFb3rXOlwBS4-O52_82cFW0rXV.jpg?r=b27" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeRuNO69SWhpcl5J_j3pIZ8wJiu16Wy6yVI50iA-6DpTwMjLaf4nn6-QyuT7Ss7A7H_xYOF9EWF0sb2ubiHYNWWtuAEmjjDvjro.webp?r=b32" alt="">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="video.html">
+                            <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcGBIuzusTO6Xuewb5HfD42L-3bZTKqjipoayNRCh6c8mA9XemFTwCO-PjUh8X-lp3nmxP9fPWkRDSq0G87RrxhkZFkQbKCWqTIPhotCRtu4eLhTAYUg00ptXmnVTmmxlm4Z.jpg?r=683" alt="">
+                        </a>
+                      </div>
+                      <!-- Repite las imágenes para el loop infinito -->
+                    </div>
+                    <button class="carousel-button right" onclick="moveCarousel('right')">&gt;</button>
+                  </div>
+                  
         </section>
         <section class="catalogo--peliculas">
-            <h2>Películas de Estreno</h2>
-            <div class="peliculas" id="estreno">
-                
-            </div>
-        </section>
-        <section class="catalogo--peliculas">
-            <h2>Películas más vistas</h2>
-            <div class="peliculas" id="vistas">
-                
-            </div>
+            <div class="carousel-container">
+                <p class="my-list_2">Series de anime japoneses</p>
+                <div class="carousel-wrapper" id="carousel">
+                  <!-- Tarjetas con imágenes -->
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUcoDRG_47YBM3WAne23M21ButgX5fdc0YB_8mCcRj0VsOXZDe2zMiH_AAo6j-V0aLZQT79e4xzBD8nCrHcKF_qOVHiw8W-L3Pc.webp?r=7e6" alt="Video 1">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfROlf8K-mofLHV7WlBKzKECXxsff0s55jwxk6uSwuDEyg_r_m12w9NXeg_hwmXoQL6tuUlht-8WOW7kgGXLQy9Ap_M4PGsucM8.webp?r=181" alt="Video 2">
+                    </a>
+                  </div>
+                  <!-- Agrega más tarjetas aquí -->
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXJC2FJ7fF7JYLd3iVi-_AsyglpeyZtt6sc4Cxj5BqIfxXO8xDFoudqNT_Ziv-ZZugJqu8stvf4sFTlwRqi7zam-Xbam7f5o6Dg.webp?r=56d" alt="Video 3">
+                    </a>
+                  </div>
+                  <!-- Duplica los ítems para el loop infinito -->
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaI_0mWBJCcIzKgjmhQ41yABxKnD408RngK1MVhSrTwpFOyNBQMcUbOB_Pv15yCl9nHnRtIaZkucr3G2CzV4s1S_F0_hJROj9i0.webp?r=fb4" alt="">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfjJcbVJWgNkalXliWSv1VUq73eTi5p8LjvB5bze5_-uwYtC-XJLPZxpRRO15jrRcrUVJgBj5xViaZv37A4AFTnkNBICX26IJAo.webp?r=6f5" alt="">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="video.html">
+                        <img src="https://occ-0-6537-185.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdYUMSX2_HsotO-N38GTwNww1MgTJG0A4mtCOVVxBhMNC3Md_lLS6OpQRkcgR503_VWe8caXdpWkT4cgMKJ_qRBk4W8AX1iaBlY.webp?r=c47" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
         </section>
     </main>
     <footer class="footer">
@@ -92,10 +289,9 @@
                 <p>Contactanos</p>
                 <p>Solo en netflix</p>
             </div>
-            <p class="idioma">🌎︎ Español</p>
-            <p class="contruccion">@capidev 2023</p>
+            <p class="idioma">© 1997-2024 Netflix, Inc.</p>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="static/index.js"></script>
 </body>
 </html>

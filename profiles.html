@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"/>
+    <title>Netflix Profiles</title>
+    <link rel="stylesheet" href="static/profiles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quién está viendo?</h1>
+        <div class="profiles">
+            <div class="profile" onclick="selectProfile('videos.html')">
+                <img src="img/profile1.png" alt="Perfil 1">
+                <p>Usuario 1</p>
+            </div>
+            <div class="profile" onclick="selectProfile('videos.html')">
+                <img src="img/profile2.png" alt="Perfil 2">
+                <p>Usuario 2</p>
+            </div>
+            <div class="profile" onclick="selectProfile('videos.html')">
+                <img src="img/profile3.png" alt="Perfil 2">
+                <p>Usuario 2</p>
+            </div>
+            <div class="profile" onclick="selectProfile('videos.html')">
+                <img src="img/profile4.jpg" alt="Perfil 2">
+                <p>Usuario 2</p>
+            </div>
+            <!-- Puedes añadir más perfiles aquí -->
+        </div>
+        <div class="view-button">
+            <button class="manage-button">Administrar perfiles</button>
+        </div>
+    </div>
+
+    <script>
+        function selectProfile(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
